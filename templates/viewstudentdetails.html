@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html>
+<head>
+   <h1>STUDENT DETAILS</h1> 
+   <title>
+      student details
+   </title>  
+      <link rel="stylesheet" type="text/css" href= "{{url_for('static',filename='viewstudentdetails_css.css')}}"/>
+   
+</head>   
+   <body>
+     
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>Address</td>
+            <td>REG NO</td>
+            <td>Mobile No</td>
+            <td>Email Id</td>
+          </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["address"]}}</td>
+               <td> {{ row["regno"]}}</td>
+               <td>{{row["mobileno"]}}</td>
+               <td>{{row["emailid"]}}</td>
+            </tr>
+         {% endfor %}
+
+      </table>
+      <br>
+      <br>
+      
+      <a href='/gotoadminhome'>GO TO HOME PAGE</a>
+
+   </body>
+</html>

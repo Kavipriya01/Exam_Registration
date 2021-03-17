@@ -1,0 +1,56 @@
+body
+{
+	margin:0;
+	padding:0;
+	background-color:#00FFFF;
+	font-family:serif;
+	background : url(image9.jpg);
+	background-size:cover;
+}	
+.title
+{
+	text-align:center;
+	padding:30px ;
+	background-color: #FFADC;
+	
+}
+.content1 h1
+{
+padding:0px 0px;
+text-align:center;	
+}
+
+.content1
+{
+	width:40%;
+	height:400px;
+	padding: 20px 100px;
+	box-shadow:0px 0px 10px 20x #666666;
+	background-color:#FAEBD7;
+	box-sizing:border-box;
+    margin:60px auto;
+	border:4px solid #808080;
+	border-radius:12px;
+
+}
+.content1 input[value="USER"]
+{
+	height:35px;
+	width:100px;
+	margin:10px 140px;
+	border-radius:5px;
+	font-weight:bold;
+	
+}	
+.content1 input[value="ADMIN"]
+{
+	height:35px;
+	width:100px;
+	margin:10px 140px;
+	border-radius:5px;
+	font-weight:bold;
+}	
+.content1 h3
+{
+	text-align:center;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href= "{{url_for('static',filename='uregex_css.css')}}"/>
+	<title> Register for exam </title>
+</head>
+
+<body>
+   
+<div class="content3">
+	<form  method="POST" action= "{{url_for('examreg')}} " >
+            <h1> Registeration Form  </h1>
+            <label for="subject" name="lsubject"> SUBJECT </label><br>
+            <input type="text" name="subject" placeholder="" required><br>
+            <label for="subcode" name="lsubcode"> SUB CODE </label><br>
+            <input type="text" name="subcode" placeholder=""required ><br>
+            <label for="exam_date" name="lexam_date"> EXAM DATE  </label><br> 
+            <input type="text" name="exam_date" placeholder="" required><br>
+            <label for="reg_no" name="lregno"> REG NO </label><br>
+            <input type="number" name="reg_no" placeholder="" required ><br>
+            <label for="stname" name="lsname"> NAME OF THE STUDENT </label><br>
+            <input type="text" name="stname" placeholder="" required><br>
+
+            <input type="submit" class="button" value="REGISTER">
+
+            <a href='/gouserhome1'>GO TO USER HOME PAGE</a>
+   </form>
+</div>
+</body>
+</html>

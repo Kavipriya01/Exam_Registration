@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html>
+<head>
+   <h1>STUDENT DETAILS</h1> 
+   <br>
+   <title>
+      student details
+   </title>  
+      <link rel="stylesheet" type="text/css" href= "{{url_for('static',filename='studetails_css.css')}}"/>
+   
+</head>   
+   <body>
+     <h1> U SUUCESSFULLY REGISTERED </h1>
+     <h1>{{msg}} </h1>
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>Address</td>
+            <td>REG NO</td>
+            <td>Mobile No</td>
+            <td>Email Id</td>
+            <td>Password</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["address"]}}</td>
+               <td> {{ row["regno"]}}</td>
+               <td>{{row["mobileno"]}}</td>
+               <td>{{row["emailid"]}}</td>
+               <td>{{row["password"]}}</td>	
+            </tr>
+         {% endfor %}
+
+      </table>
+      <br>
+      <br>
+      <a href='/loginpg'>GO TO LOGIN PAGE</a>
+
+   </body>
+</html>

@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html>
+<head>
+    <h1>EXAM DETAILS</h1>
+    <br> 
+    <title>
+        EXAM DETAILS
+    </title>
+    <link rel="stylesheet" type="text/css" href= "{{url_for('static',filename='exdetails_css.css')}}"/>
+</head>    
+   <body>
+      <table border = 1>
+         <thead>
+            <td>SUBJECT</td>
+            <td>SUB CODE</td>
+            <td>EXAM DATE</td>
+            <td>REG NO</td>
+            <td>NAME</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["subject"]}}</td>
+               <td>{{row["subcode"]}}</td>
+               <td> {{ row["exam_date"]}}</td>
+               <td>{{row["reg_no"]}}</td>
+               <td>{{row["stname"]}}</td>
+            </tr>
+         {% endfor %}
+
+      </table>
+
+      <br>
+      <br>
+    <br>  
+    <a href='gouserhome'>GO TO HOME PAGE </a>
+   </body>
+</html>

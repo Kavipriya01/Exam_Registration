@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML>
+<head>
+	
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='ureg_css.css')}}"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='validation.js') }}"></script>
+	<title> Register </title>
+</head>
+
+<body>
+   
+<div class="content2">
+	<form  method="POST" action= "{{url_for('studetails')}}" onsubmit="check();" >
+            <h1> Registeration Form </h1>
+            <label for="sname" name="lname"> NAME </label><br>
+            <input type="text" name="sname" placeholder="name" required ><br>
+            <label for="address" name="laddress"> ADDRESS </label><br>
+            <input type="text" name="address" placeholder="address" required><br>
+            <label for="regno" name="lregno"> REG NO </label><br> 
+            <input type="text" name="regno" placeholder="regno" required ><br>
+            <label for="mobileno" name="lmobileno"> MOBILE NO </label><br>
+            <input type="number" name="mobileno" placeholder="" required><br>
+            <label for="emailid" name="lemailid"> EMAIL ID </label><br>
+            <input type="email" name="emailid" placeholder="" required><br>
+            
+            <label for="password" name="lpassword"> PASSWORD </label><br> 
+            <input type="password" name="password" placeholder="....." onkeyup="check();" ><br>
+            <label for="confirm" name="lconfirm"> CONFIRM PASSWORD </label><br> 
+            <input type="password" name="confirm" placeholder="......"  onkeyup="check();"><br><br>
+            
+            
+            <input type="submit" class="button" value="SUBMIT" >
+
+            <a href='/userlogin'>GO TO LOGIN PAGE</a>
+            
+	</form>
+</div>
+</body>
+</html>
+
+		
